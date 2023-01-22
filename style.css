@@ -1,57 +1,24 @@
-/*
-TEXT (p,h)
--color (const/ rgb()/ #001122)
--background-color
--font-size (px)
--font-weight (normal/bold)
--text-align (left/right/center/justify)
--text-transform: uppercase/lowercase/capitalize
--letter-spacing
--word-spacing
--line-height
--text-decoration-line
-
-*/
-
-.font_raleway{
-    font-family: 'Raleway', sans-serif;
+body{
+    /*background-color: yellow;*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ubuntu_22.10_Kinetic_Kudu.png/640px-Ubuntu_22.10_Kinetic_Kudu.png");
 }
 
-.test_style_text{
-    /*color: rgb(173, 216, 230);*/
-    /*color: rgba(0,0,255,0.5);*/
-    /*color: #00FF;*/
-    color: rgb(60, 141, 216);
-    background-color: black;
-    letter-spacing: 2px;
-    font-size: 10px;
-    line-height: 1.8; /*1 - 100%*/
-    word-spacing: 20px;
-    /*text-shadow: 1px 1px yellow;*/
-    text-decoration-line: line-through;
-    text-align: justify;
+
+.mark{
+    background-color: greenyellow;
+}
+
+.big{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opacity_text{
+    opacity: 0.5; /* 1 - 100%, 0.5 - 50%*/
+    background-color: blue;
 }
 
 p{
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.mark_text{
-    text-transform: uppercase;
-    text-align:center;
-}
-
-
-.mark_p{
-    background-color: greenyellow;
-    font-weight: bold;
-    text-decoration-line:underline;
-}
-
-.warning_text{
-    color: red;
-}
-
-.big_text{
-    font-size: 20px;
-}
