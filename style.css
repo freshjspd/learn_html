@@ -1,45 +1,38 @@
 /*
+TEXT (p,h)
+-color (const/ rgb()/ #001122)
+-background-color
+-font-size (px)
+-font-weight (normal/bold)
+-text-align (left/right/center/justify)
+-text-transform: uppercase/lowercase/capitalize
+-letter-spacing
+-word-spacing
+-line-height
+-text-decoration-line
+
+*/
+
+.test_style_text{
+    /*color: rgb(173, 216, 230);*/
+    /*color: rgba(0,0,255,0.5);*/
+    /*color: #00FF;*/
+    color: rgb(60, 141, 216);
+    background-color: black;
+    letter-spacing: 2px;
+    font-size: 10px;
+    line-height: 1.8; /*1 - 100%*/
+    word-spacing: 20px;
+    /*text-shadow: 1px 1px yellow;*/
+    text-decoration-line: line-through;
+    text-align: justify;
+}
+
 p{
-    color: green;
     font-size: 14px;
 }
-*/
-.text_mark{
-    font-weight: bold;
-    font-style: italic;
-    color: yellow;
-    background-color: aqua;
+
+.mark_text{
+    text-transform: uppercase;
+    text-align:center;
 }
-
-.red_text{
-    color: red;
-}
-
-
-#green{
-    color: green;
-    font-size: 20px;
-}
-
-h1{
-    color: red;
-}
-
-
-h2{
-    color: blue;
-}
-
-h3{
-    color:blueviolet;
-}
-
-
-.smile_list{
-    list-style-type:'\1F60A'; 
-}
-
-.no_markers_list{
-    list-style-type: none;
-}
-
