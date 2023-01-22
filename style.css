@@ -13,6 +13,10 @@ TEXT (p,h)
 
 */
 
+.font_raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
 .test_style_text{
     /*color: rgb(173, 216, 230);*/
     /*color: rgba(0,0,255,0.5);*/
@@ -35,4 +39,19 @@ p{
 .mark_text{
     text-transform: uppercase;
     text-align:center;
+}
+
+
+.mark_p{
+    background-color: greenyellow;
+    font-weight: bold;
+    text-decoration-line:underline;
+}
+
+.warning_text{
+    color: red;
+}
+
+.big_text{
+    font-size: 20px;
 }
