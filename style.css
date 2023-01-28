@@ -1,38 +1,30 @@
-
-
-div{
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    margin: 10px;
+.container_1{
+    width: 300px;
+    height: 300px;
 }
 
-.box2{
-    margin-left: 30px;
-    margin-top: -30px;
-    background-color: magenta;
+img{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
 }
 
-.box3{
-    margin-left: -30px;
-}
-
-.child{
-    width: 20px;
-    height: 50px;
-    margin: 5px;
-    background-color: yellow;
-    display: inline-block;
-}
-
-.box4{
-    margin-left: 40px;
+.container_2{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.thesprucepets.com/thmb/7TDhfkK5CAKBWEaJfez6607J48Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg");
+    background-size: 300px 200px;
+    background-color: lightblue;
+    background-position: center center;
 }
 
 /*
-margin: 25px 50px 75px 100px;
-top margin is 25px
-right margin is 50px
-bottom margin is 75px
-left margin is 100px
-*/
+<div class="container_1">
+        <img 
+            src="https://www.thesprucepets.com/thmb/7TDhfkK5CAKBWEaJfez6607J48Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg" 
+            alt="dog"
+        >
+    </div>
+    */
