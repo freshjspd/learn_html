@@ -1,0 +1,76 @@
+:root{
+    --logo-size: 200px;
+}
+
+*{
+    margin: auto;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgb(33, 33, 155), white);
+}
+
+.logo{
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border-radius: 50%;
+    border: 5px solid gray;
+    background-color: lightgray;
+    /*background-image: url("");*/
+    margin-top: calc(var(--logo-size) / -2);
+}
+
+.btn{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.btn > img {
+    width: 25px;
+    height: 25px;
+    /*margin-left: 20px;*/
+}
+
+.btn > p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn > * {
+    display: inline-block;
+}
+
+.fullname{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.job{
+    font-size: 20px;
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.followers{
+    font-size: 18px;
+    color: gray;
+    margin-top: 40px;
+}
+
+* > .info{
+    text-align: center;
+}
+
+.colorBox{
+    background-color: orange;
+    height: 200px;
+}
