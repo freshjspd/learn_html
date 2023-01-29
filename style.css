@@ -10,6 +10,8 @@ vh - viewport height
 100vw - 100 области вьюпорта по ширине
 ширину %, высота vh
 */
+
+/*
 body{
     background-image: url("https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-457882.jpg&fm=jpg");
     background-position: center;
@@ -58,3 +60,65 @@ body{
     background-color: white;
     color: blue;
 }
+*/
+
+/*positions
+default - static
+доступны свейства top, bottom, left, right
+1. relative
+2. absolute
+3. fixed (sticky)
+
+*/
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.box1{
+    background-color:cornflowerblue;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.box2{
+    background-color: green;
+}
+
+.box3{
+    background-color: rgba(0,0,255,0.4);
+}
+
+.child1{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+
+}
+.child2{
+    width: 80px;
+    height: 80px;
+    background-color: magenta;
+}
+
+
+/*
+static - по ум и элемент не сдвигается
+
+relative - элемент сдвигается относительно самого себя
+а другие элементы как стояли так и стоят
+
+absolute - элемент сдвигается относительно
+своего ближайшего родителя
+а другие элементы не видят его и становятся сначала контейнера родителя
+(родитель не в static //relative )
+
+fixed - элемент сдвигается относительно
+viewport
+а другие элементы не видят его и становятся сначала контейнера родителя
+
+*/
