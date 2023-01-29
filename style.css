@@ -10,7 +10,7 @@ body{
 .card{
    width: 400px;
    height: 300px;
-   background-color: deeppink;
+   background: linear-gradient(rgba(255, 20, 147, 0.7), rgb(255, 165, 0));
    color: white; 
    position: relative;
    margin: 0 auto;
