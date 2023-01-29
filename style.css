@@ -7,10 +7,31 @@ body{
     margin: 0;
 }
 
+ul{
+    margin-top: 100px;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.card1{
+    background: linear-gradient(rgba(255, 20, 147, 0.7), rgb(255, 165, 0));
+}
+
+.card2{
+    background: linear-gradient(deepskyblue, blue);
+}
+
+.card3{
+    background: linear-gradient(greenyellow, green);
+}
+
+
 .card{
    width: 400px;
    height: 300px;
-   background: linear-gradient(rgba(255, 20, 147, 0.7), rgb(255, 165, 0));
    color: white; 
    position: relative;
    margin: 0 auto;
@@ -37,7 +58,7 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 0, 0.8);
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 .info{
