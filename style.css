@@ -1,124 +1,55 @@
+body{
+    background-color: bisque;
+}
+
 *{
     padding: 0;
     margin: 0;
 }
 
-/*
-100% - 100% от родителя
-vh - viewport height
-100vh - 100 области вьюпорта по высоте
-100vw - 100 области вьюпорта по ширине
-ширину %, высота vh
-*/
-
-/*
-body{
-    background-image: url("https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-457882.jpg&fm=jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.card{
+   width: 400px;
+   height: 300px;
+   background-color: deeppink;
+   color: white; 
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+   border-radius: 20px;
 }
 
-.header{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-
-.header > p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.btn{
-    border: 2px solid blue;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;  
-    text-align: center;  
-    margin-left: 550px;
-}
-
-.btn > p{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 0;
-    margin-top: 15px;
-    background-color: lightskyblue;
-}
-
-.section1 {
-    background-color: blue;
-    color: white;
-}
-
-.section2{
-    background-color: white;
-    color: blue;
-}
-*/
-
-/*positions
-default - static
-доступны свейства top, bottom, left, right
-1. relative
-2. absolute
-3. fixed (sticky)
-
-*/
-.box{
-    width: 200px;
-    height: 200px;
-}
-
-.box1{
-    background-color:cornflowerblue;
+.circle1{
+    z-index: 2;
     position: relative;
-    top: 30px;
-    left: 50px;
+    bottom: 250px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
 }
 
-.box2{
-    background-color: green;
+.circle2{
+    position: relative;
+    left: 160px;
+    top: -350px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 0, 0.8);
 }
 
-.box3{
-    background-color: rgba(0,0,255,0.4);
+.info{
+    padding-left: 50px;
 }
 
-.child1{
-    width: 80px;
-    height: 80px;
-    background-color: yellow;
-    position: fixed;
-    top: 20px;
-    left: 50px;
-
+.info > h3{
+    padding-top: 50px;
 }
-.child2{
-    width: 80px;
-    height: 80px;
-    background-color: magenta;
+.info > h1{
+   padding-top: 20px;
+}
+.info > h5{
+   padding-top: 40px;
 }
 
-
-/*
-static - по ум и элемент не сдвигается
-
-relative - элемент сдвигается относительно самого себя
-а другие элементы как стояли так и стоят
-
-absolute - элемент сдвигается относительно
-своего ближайшего родителя
-а другие элементы не видят его и становятся сначала контейнера родителя
-(родитель не в static //relative )
-
-fixed - элемент сдвигается относительно
-viewport
-а другие элементы не видят его и становятся сначала контейнера родителя
-
-*/
