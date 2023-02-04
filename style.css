@@ -1,62 +1,88 @@
-/*
-
-
-<p class="markText"></p>
-<p class="markText"></p>
-<h3 class="markText"></h3>
-<h2 id="subtitleCard"></h2>
-
-селекторы
--типа ( p{} )  10
--класса (.markText{} ) 100
--id (#subtitleCard {} ) 1000
-
-!important 10000
-*/
-
-.testClass{
-    color:coral;
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-.testClass2{
-    color:chartreuse;
+:root{
+    --primary-color: #fa4a0c;
+    --second-color: #252b42;
+    --text-color: #737373;
+    --primary-size-font: 16px;
 }
 
-#id1{
-    color: red;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+nav.menu{
+    display: inline-block;
+}
 
-#id2{
-    letter-spacing: 2px;
+.app{
+    background-image: url("./images/back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0 178px;
+}
+
+.app-text{
+    font-family: Montserrat;
     font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: white;
 }
 
-p{
-    color: green;
+.app-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: white;
+    margin: 10px auto;
+    max-width: 800px;
 }
 
-ul p {
-    color: blue;
+.app-about{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 50px;
 }
 
-.textBox p {
-    color: black;
+.btn{
+    display: inline-block;
+    border-radius: 30px;
 }
 
-.markText{
-    background-color: yellow;
+.btn > p {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    height: 68px;
+    width: 236px;
+    padding: 18px 0px;
+
 }
 
-.textBox .markText{
-    text-decoration: overline;
-    background-color: lightblue;
+.colorBtn{
+    background-color: var(--primary-color);
+    margin-right: 35px;
 }
 
-.textBox h2 {
-    color: black !important;
-}
-
-.innerBox h2 {
-    color: red;
+.transparentBtn{
+    background: none;
+    border: 1px solid white;
 }
