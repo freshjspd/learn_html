@@ -86,3 +86,33 @@ nav.menu{
     background: none;
     border: 1px solid white;
 }
+
+.order-title{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.order{
+    background-image: url("./images/back2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 147px 0 131px;
+}
+
+footer > div{
+    position: relative;
+    left: 200px;
+}
+
+footer > p {
+    display: inline-block;
+    position: relative;
+}
