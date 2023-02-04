@@ -1,76 +1,95 @@
 :root{
-    --logo-size: 200px;
+    --card-width: 400px;
+    --card-height: 500px;
+    --img-size: 150px;
+    --main-color: white;
+    --second-color: gray;
+    --main-font-size: 20px;
 }
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.userCardContainer{
+    width: var(--card-width);
+    height: var(--card-height);
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+* > .userCardContainer{
+    text-align: center;
+    font-size: 20px;
+}
+
+.userCardContent{
+    position: relative;
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+.topBack{
+    position: relative;
+    width: inherit;
+    height: 200px;
+    background-image: url("https://www.analyticsinsight.net/wp-content/uploads/2020/11/Artificial-Intelligence-5.jpg");
+    overflow: hidden;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.infoContainer{
+    position: relative;
+    top: calc(var(--img-size) / 2 + 20px);
+}
+
+.userPhoto{
+    background-image: url("https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80");
+    width: var(--img-size);
+    height: var(--img-size);
+    border-radius: 50%;
+    border: 5px solid var(--second-color);
+    position: absolute;
+    top: calc(var(--img-size) / -2);
+    left: 30%;
+    overflow: hidden;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--img-size);
+}
+
+.follow{
+    border: 2px solid var(--second-color);
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: rgb(115, 115, 239);
+}
+.foolow > a{
+    font-size: 30px;
+}
+.follow > p {
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 1.2em;
+}
+
+body{
+    background-color: silver;
+}
+
+/*
+.downloadBtn{
     margin: auto;
 }
-
-.card{
-    width: 400px;
-    height: 600px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    background: linear-gradient(45deg, rgb(33, 33, 155), white);
-}
-
-.logo{
-    width: var(--logo-size);
-    height: var(--logo-size);
-    border-radius: 50%;
-    border: 5px solid gray;
-    background-color: lightgray;
-    /*background-image: url("");*/
-    margin-top: calc(var(--logo-size) / -2);
-}
-
-.btn{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid gray;
-}
-
-.btn > img {
-    width: 25px;
-    height: 25px;
-    /*margin-left: 20px;*/
-}
-
-.btn > p{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.btn > * {
-    display: inline-block;
-}
-
-.fullname{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.job{
-    font-size: 20px;
-    color: gray;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.followers{
-    font-size: 18px;
-    color: gray;
-    margin-top: 40px;
-}
-
-* > .info{
-    text-align: center;
-}
-
-.colorBox{
-    background-color: orange;
-    height: 200px;
-}
+*/
