@@ -186,7 +186,7 @@ header {
 
 nav{
     display: flex;
-    flex-basis: 114px; 
+    flex-basis: 600px;
 }
 
 nav.menu ul{
@@ -194,7 +194,8 @@ nav.menu ul{
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 114px;
+    width: 100%;
+
 }
 
 nav.menu li{
