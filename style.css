@@ -1,118 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+body{
+    background-color: aquamarine;
 }
 
-:root{
-    --primary-color: #fa4a0c;
-    --second-color: #252b42;
-    --text-color: #737373;
-    --primary-size-font: 16px;
+.userCardContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.buttonFollow{
+    width: 150px;
+    height: 40px;
+    background-color: deepskyblue;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
 }
 
-nav.menu{
-    display: inline-block;
+.fullname{
+    font-size: 30px;
 }
 
-.app{
-    background-image: url("./images/back1.png");
+.userAbout{
+    font-size: 14px;
+}
+
+.statTitle{
+    color: red;
+    font-size: 10px;
+}
+
+.statValue{
+    color: black;
+    font-size: 10px;
+}
+
+.userPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-image: url("https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min.jpg");
+    object-fit: cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    background-size: 150px;
     background-position: center;
-    color: white;
+}
+
+.userInfo > p{
     text-align: center;
-    padding: 80px 0 178px;
 }
 
-.app-text{
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
-    color: white;
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.app-title{
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 58px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: white;
-    margin: 10px auto;
-    max-width: 800px;
-}
-
-.app-about{
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: 0.2px;
-    color: white;
-    margin-bottom: 50px;
-}
-
-.btn{
-    display: inline-block;
-    border-radius: 30px;
-}
-
-.btn > p {
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    line-height: 36px;
-    height: 68px;
-    width: 236px;
-    padding: 18px 0px;
-
-}
-
-.colorBtn{
-    background-color: var(--primary-color);
-    margin-right: 35px;
-}
-
-.transparentBtn{
-    background: none;
+.statItem{
     border: 1px solid white;
+    background-color: lightblue;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.order-title{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 57px;
-    letter-spacing: 0.2px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.order{
-    background-image: url("./images/back2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 147px 0 131px;
-}
-
-footer > div{
-    position: relative;
-    left: 200px;
-}
-
-footer > p {
-    display: inline-block;
-    position: relative;
+.statInfo{
+    display: flex;
+    flex-direction: column;
 }
