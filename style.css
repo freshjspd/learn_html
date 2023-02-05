@@ -1,96 +1,177 @@
-body{
-    background-color: aquamarine;
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-.userCardContainer{
-    margin: auto;
+:root{
+    --primary-color: #fa4a0c;
+    --second-color: #252b42;
+    --text-color: #737373;
+    --primary-size-font: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app{
+    background-image: url("./images/back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0 178px;
+}
+
+.app-text{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: white;
+}
+
+.app-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: white;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.app-about{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn{
+    border-radius: 30px;
+}
+
+.btn > p {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    height: 68px;
+    width: 236px;
+    padding: 18px 0px;
+
+}
+
+.colorBtn{
+    background-color: var(--primary-color);
+    margin-right: 35px;
+}
+
+.transparentBtn{
+    background: none;
+    border: 1px solid white;
+}
+
+.order-title{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.order{
+    background-image: url("./images/back2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 147px 0 131px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 176px;
+    margin-top: 60px;
+}
+
+footer > div {
+    margin-left: 30px;
+}
+
+.app > .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 300px;
-    height: 470px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
 }
 
-.buttonFollow > p{
-    text-align: center;
-    vertical-align: middle;
-}
-.buttonFollow{
-    width: 150px;
-    height: 40px;
-    background-color: deepskyblue;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    vertical-align: middle;
+.button_container {
+     display: flex;
+     justify-content: center;
 }
 
-.fullname{
-    font-size: 30px;
-}
-
-.userAbout{
-    font-size: 14px;
-}
-
-.statTitle{
-    color: red;
-    font-size: 10px;
-}
-
-.statValue{
-    color: black;
-    font-size: 10px;
-}
-
-.userPhoto{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid gray;
-    background-image: url("https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=400x300");
-    object-fit: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: 150px;
-    background-position: center;
-}
-
-.userInfo > p{
-    text-align: center;
-}
-
-.stats{
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.statItem{
-    border: 1px solid white;
-    flex-basis: 33%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.statInfo{
+.order > .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.statItem > i {
-    color: red;
+.mobi h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: var(--primary-color);
 }
 
-.statItem + .statItem {
-    border-left: 2px solid gray;
+.mobi h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: var(--second-color);
+    margin-top: 17px;
+}
+
+.mobi h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    margin-top: 27px;
+}
+
+.mobi{
+    display: flex;
+    padding: 80px 0;
+    justify-content: space-around;
+}
+
+.mobi .info {
+    align-self: center;
+    flex-basis: 561px;
 }
