@@ -27,6 +27,12 @@
     background: lawngreen;
     transform: translateY(100px);
     z-index:5;
+    flex-direction: column;
+}
+
+.part1 > img {
+    width: 100px;
+    height: 100px;
 }
 
 .container .card .part.part2{
@@ -41,6 +47,10 @@
 
 }
 
+.part2 > p {
+    text-align: center;
+    padding: 30px;
+}
 .btn{
     border: 2px solid white;
 }
@@ -55,10 +65,6 @@
     background-color:hotpink;
 }
 
-.part1 i {
-    width: 100px;
-    height: 100px;
-}
 
 
 
