@@ -37,6 +37,11 @@ header{
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    z-index: 2;
+}
+
+.menu .item-select a{
+    color: #fe0002;
 }
 
 .summon-menu{
@@ -134,18 +139,23 @@ main{
     position: relative;
 }
 
-.lot-icons{
-    margin: 0px 92px 0px 0px ;
-}
-
 .lot-icons li{
     margin-bottom: 18px;
 }
 
+
 .rb {
-    margin: 29px 65px 0px 0px;
+    margin-top: 29px;
+    margin-left: 117px;   /*97px*/
+    margin-right: 66px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rb img{
+
 }
 
 .more-block h4{
@@ -167,6 +177,7 @@ main{
     margin-bottom: 40px;
     margin-top: auto;
     margin-right: 40px;
+    z-index: 5;
 }
 
 .img-unicorn{
@@ -220,6 +231,16 @@ main{
     width: 198px;
     justify-content: space-between;
     align-items: center;
+}
+
+/* желтый фон*/
+.yellow-back{
+    top: -120px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 120px);
+    left: 282px;
+    background-color: #FFEA2F;
 }
 
 
