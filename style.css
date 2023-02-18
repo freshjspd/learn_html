@@ -28,7 +28,10 @@ p::first-letter{
 }
 
 .test::after{
-    content: url("./images/unicorn.png");
-    width: 200px;
-    height: 200px;
+    content:"";
+    background-image: url("./images/unicorn.png");
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
