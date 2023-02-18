@@ -1,45 +1,8 @@
-/* css psevdoclass
-:root - корневой, переменные, настройка корневого элемент
-:hover наводим курсор
-a:link ссылка обычное поведение
-a:visited ссылка которую нажали
-a:active ссылка в момент нажатия
-:focus - єлемент управления , ввод 
-
-псевдоклассы дочерних элементов
-:first-child
-:last-child
-:nth-child(n) - для конкретного дочернего элемента с номером Н
-
-:only-child - только 1 доч элемент
-:only-of-type - единственные тип в контейнере
-
-:nth-last-child(n) - доч элемент с номером Н от конца
-:nth-last-of-type(n) - тоже но по типу
-
-*/
-
-.container p:first-child{
-    color: orange;
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
 }
 
-.container p:last-child{
-    color: red;
-}
-
-.container p:nth-child(4){
-    color:blueviolet;
-}
-
-.container p:nth-child(odd){
+tfoot{
     background-color: aqua;
 }
-
-.container p:nth-child(even){
-    background-color: magenta;
-}
-
-.container p:nth-last-child(2){
-    font-size: 20px;
-}
-
