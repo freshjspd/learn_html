@@ -1,6 +1,39 @@
 table, th, td {
-    border: 2px solid black;
+    border: 2px solid darkslategray;
     border-collapse: collapse;
+    padding: 15px;
 }
+
+tfoot{
+    background-color: gray;
+}
+
+thead{
+    background-color: darkslategray;
+    color: white;
+}
+
+caption{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd){
+    background-color: darkturquoise;
+}
+
+tbody tr:nth-child(odd) td:nth-child(even){
+    background-color: paleturquoise;
+}
+
+tbody tr:nth-child(even) td:nth-child(odd){
+    background-color: paleturquoise;
+}
+
+tbody tr:nth-child(even) td:nth-child(even){
+    background-color: white;
+}
+
+
 
 
