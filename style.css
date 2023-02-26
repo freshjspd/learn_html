@@ -63,4 +63,43 @@ section{
     flex-direction: row;
 }
 
-@media screen and (max-width: 500px){}
+.mainMenu{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    *{
+        font-size: 10px;
+    }
+    .wrapper, nav, section{
+        flex-direction: column;
+    }
+    aside{
+        display: none;
+    }
+    nav{        
+        display: none;
+    }
+    .mainMenu:hover,nav{
+        cursor: pointer;
+        display: flex;
+    }
+    .mainMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        color: white;
+        background-color: black;
+
+}
+
+
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+}
