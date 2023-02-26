@@ -77,12 +77,15 @@ section{
     aside{
         display: none;
     }
-    nav{        
+    nav a{        
+        font-size: 0;
         display: none;
     }
-    .mainMenu:hover,nav{
+    nav:hover a{
         cursor: pointer;
-        display: flex;
+        font-size: 10px;
+        display: initial;
+
     }
     .mainMenu{
         display: flex;
