@@ -1,50 +1,89 @@
+/*
+display: grid  (container)
+Свойства
+количество столбцов и строй
+grid-template-columns
+grid-template-rows
+grid-template - обощенное свойство
+
+200px 200px 500px
+30% 20% 50%
+auto auto auto
+repeat(3, 200px)
+grid-template: repeat(3, 200px) / repeat(2, 100px)
+repeat(3, 30%)
+1fr 1fr 1fr
+repeat(3, 1fr)
+1fr 200px repeat(3, 20px)
+
+раcстояния (или поля)
+grid-column-gap
+grid-row-gap
+gap
+
+расположение элементов
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+----
+обощенные
+grid-column
+grid-row
+
+общие свойство для расположения элементов
+grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+
+пример
+.item2{
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+*/
+
+
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    border: 1px solid blue;
-    padding: 0 15px;
-}
-
-.row{
-    margin:  0 15px;
-    border: 1px solid blue;
-}
-
-.row::after{
-    display: block;
-    clear: both;
-    content: "";
-}
-
-.col{
-    margin:  0 15px;
-    float: left;
-}
-
-.col-3{
-    width: calc(100%/3 - 30px);
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 20px / 20px;
+    border: 2px solid red;
 }
 
 .item{
+    margin: 10px;
     background-color: yellow;
-    height: 200px;
-    color: orangered;
-    font-weight: bold;
 }
 
+.item-2{
+    background-color: blue;
+    grid-area: 2 / 2 / 4 / 4 ;
+}
 
+.item-12{
+    grid-area: 1 / 2 / 4 / 4;
+    background-color: lawngreen;
+    opacity: 0.5;
+    z-index: 2;
+}
 
 /*
-.col{
-    background-color: gray;
-    height: 200px;
-    width: calc(100% / 12 - 30px);
-    margin: 0 15px;
-    float: left;
+.container{
+    display: grid;
+    grid-template-columns: auto 300px 500px;
+    grid-template-rows: 200px 100px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    justify-content: space-evenly;
 }
 
-.container::before{
-    clear: both;
-}
-*/
+
+ .item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  */
+
+
