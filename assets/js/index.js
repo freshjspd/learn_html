@@ -1,71 +1,51 @@
 /*
-document.elem
-childNodes (firstChild, lastChild)
-parentNode
-previousSibling, NextSibling
+удаление элемента
+elem.remove();
 
-содержимое
-innerHTML
-innerText
-outerHTML
-outerText
+создание элемента
+document.createElemet(tag);
 
-textContent
+1. tag
+2. content
+3. attributes+class
+4. !!! обязательно прикрепить к родителю
 
-атрибуты
-elems.attributes коллекция всех атрибутов.
-elem.hasAttribute(name) – проверяет наличие атрибута.
-elem.getAttribute(name) – получает значение атрибута.
-elem.setAttribute(name, value) – устанавливает значение атрибута.
-elem.removeAttribute(name) – удаляет атрибут.
+P/S как добавить класс???
+1. elem.classList.add('name');
+2. elem.setAttribute('class', 'name');
+
+методы добавления
+в начало node.prepend(el)
+в конец  node.append(el)
+до узла   node.before(el)
+после узла  node.after(el)
+заменить узел  node.replaceWith(al)
 */
+const divContainerEl = 
+document.querySelector('.container');
 
-let textMarkElems = 
-document.querySelectorAll('p.mark');
+divContainerEl.style.backgroundColor = 'blue';
+//divContainerEl.remove();
+
+const pEl = document.createElement('p');
+pEl.innerText = "It's my first created para";  //pEl.textContent
+pEl.classList.add('mark');
+pEl.setAttribute('isSelected', true);
+
+document.body.append(pEl);
 
 
-textMarkElems.forEach(el => {
-    el.style.backgroundColor = 'chartreuse';
-    el.style.color = 'white';
-    el.style.fontWeight = 'bold';
-    el.style.fontSize = '18px';
-});
+const cardEl = document.createElement('div');
+const fullNameEl = document.createElement('p');
+cardEl.classList.add('card');
+fullNameEl.classList.add('userFullName');
+fullNameEl.textContent = 'John Smith';
 
-const textMark1 = textMarkElems[0];
-console.log(textMark1);
-console.log(textMark1.attributes);
-for(let i of textMark1.attributes){
-    console.log(i.name, '=', i.value);
-}
-console.log(textMark1.hasAttribute('label'));
-console.log(textMark1.hasAttribute('isSelected'));
-console.log(textMark1.getAttribute('label'));
-textMark1.setAttribute('isSelected','true');
-console.log(textMark1.attributes);
-//textMark1.setAttribute('class','class1 class2');
-
-console.log('--------------');
-console.log(textMark1.classList);
-for(let i of textMark1.classList){
-    console.log(i);
-}
-textMark1.classList.add('warmText');
-console.log(textMark1.classList.contains('warmText'));
-textMark1.classList.remove('warmText');
-console.log(textMark1.classList);
+cardEl.append(fullNameEl);
+document.body.append(cardEl);
 
 
 
-/*
-Получение элементов:
-getElementById('idName')
-getElementsByName('class')
-getElementsByClassName('class')
-getElementsByTagName('tag')
 
-querySelector('cssSelector')
-.class  #id 
 
-querySelectorAll('cssSelector')
 
-*/
