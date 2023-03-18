@@ -1,3 +1,4 @@
+/*
 const user = {
     img: '#',
     fullName: 'Kate Adson',
@@ -7,3 +8,6 @@ const user = {
         tel: '950'
     }
 };
+
+*/
+
