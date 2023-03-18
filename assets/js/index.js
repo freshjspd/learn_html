@@ -1,34 +1,59 @@
-//let containerEl = document.getElementById('container');
-let containerEl = 
-document.querySelector('#container');
-containerEl.style.backgroundColor = 'yellow';
+/*
+document.elem
+childNodes (firstChild, lastChild)
+parentNode
+previousSibling, NextSibling
 
+содержимое
+innerHTML
+innerText
+outerHTML
+outerText
 
-//let redTextEl = document.querySelector('.redText');
+textContent
 
-let redTextEl = 
-document.querySelector('div#container > p.redText');
-redTextEl.style.color = 'red';
-redTextEl.style.fontSize = '20px';
-redTextEl.style.fontWeight = 'bold';
+атрибуты
+elems.attributes коллекция всех атрибутов.
+elem.hasAttribute(name) – проверяет наличие атрибута.
+elem.getAttribute(name) – получает значение атрибута.
+elem.setAttribute(name, value) – устанавливает значение атрибута.
+elem.removeAttribute(name) – удаляет атрибут.
+*/
 
 let textMarkElems = 
 document.querySelectorAll('p.mark');
-console.log(textMarkElems);
-console.log('-----------------');
+
 
 textMarkElems.forEach(el => {
     el.style.backgroundColor = 'chartreuse';
     el.style.color = 'white';
     el.style.fontWeight = 'bold';
     el.style.fontSize = '18px';
-    console.log(el.classList);
-    console.log(el.attributes);
 });
 
-//let textMarkEl2 =
-//document.getElementsByClassName('mark'); 
-//console.log(textMarkEl2);
+const textMark1 = textMarkElems[0];
+console.log(textMark1);
+console.log(textMark1.attributes);
+for(let i of textMark1.attributes){
+    console.log(i.name, '=', i.value);
+}
+console.log(textMark1.hasAttribute('label'));
+console.log(textMark1.hasAttribute('isSelected'));
+console.log(textMark1.getAttribute('label'));
+textMark1.setAttribute('isSelected','true');
+console.log(textMark1.attributes);
+//textMark1.setAttribute('class','class1 class2');
+
+console.log('--------------');
+console.log(textMark1.classList);
+for(let i of textMark1.classList){
+    console.log(i);
+}
+textMark1.classList.add('warmText');
+console.log(textMark1.classList.contains('warmText'));
+textMark1.classList.remove('warmText');
+console.log(textMark1.classList);
+
 
 
 /*
