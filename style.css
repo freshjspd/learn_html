@@ -23,11 +23,23 @@
 }
 
 .info_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
     height: 100px;
     margin-top: 20px;
 }
 
 .button_container{
+    width: inherit;
     display: flex;
+    justify-content: space-around;
 }
+
+.button_container > * {
+    border: 1px solid gray;
+}
+
 
