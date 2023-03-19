@@ -72,7 +72,7 @@ function createUserFullName(fullName){
 
 
 function createCard(user){
-    const card = document.createElement('div');
+    const card = document.createElement('li');
     card.classList.add('card_container');
 
     const imgContainer = createUserPhoto(user.img);
@@ -91,12 +91,6 @@ function createCard(user){
 
 
 const userCardsEl = document.getElementById('userCards');
-//const cards = users.map( u => userCardsEl.append(document.createElement('li').append(createCard(u))));
-
-const cards = users.map( u => {
-    let liCard = document.createElement('li');
-    let card = liCard.append(createCard(u));
-    userCardsEl.append(liCard);
-});
+const cards = users.map( u => { userCardsEl.append(createCard(u)); });
 
 
