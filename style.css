@@ -1,49 +1,18 @@
-#userCards{
-    display: flex;
-    justify-content: center;
-}
-.card_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 300px;
-    border: 1px solid black;
-    overflow: hidden;
+.square{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    margin: 5px;
 }
 
-.image_container{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.image_container > img {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-}
-
-.info_container{
+#board{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: inherit;
-    height: 100px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 300px;
 }
 
-.button_container{
-    width: inherit;
-    display: flex;
-    justify-content: space-around;
+body{
+    background-color: black;
 }
-
-.button_container > * {
-    border: 1px solid gray;
-}
-
-
