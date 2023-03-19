@@ -16,6 +16,6 @@ function makeActive(i, index){
     if(activeEl){activeEl.classList.remove('active');}
     i.classList.add("active");
     document.body.style.backgroundColor = colors[index];
-    indexActive = i;
-    
+    indexActive = index;
+    activeEl = i;
 }
