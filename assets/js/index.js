@@ -1,17 +1,7 @@
 const btn = document.getElementById('btn');
-/*
-
+let isHello = true;
 btn.onclick = function(){
-    alert('Hello!');
-};
-*/
-
-btn.onclick = sayHello;
-
-function sayHello(){
-    alert('Hello!');
+    isHello == true ? alert('Hello') : alert('Bye');
+    isHello = !isHello;
 }
 
-function sayBye(){
-    alert('Bye!');
-}
