@@ -1,20 +1,17 @@
-const board = document.getElementById("board");
-const count = 100;
-const colors = ['greenyellow', 'green', 'red', 'yellow', 'blue', 'cyan', 'fuchsia', 'magenta'];
+const btn = document.getElementById('btn');
+/*
 
-for(let i=0; i<count; i++){
-    const square = document.createElement('div');
-    square.classList.add('square');
-    board.append(square);
-    square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = getRandomColor(colors);
-    });
-    square.addEventListener('mouseleave', () => {
-        square.style.backgroundColor = 'gray';
-    });
+btn.onclick = function(){
+    alert('Hello!');
+};
+*/
+
+btn.onclick = sayHello;
+
+function sayHello(){
+    alert('Hello!');
 }
 
-function getRandomColor(arrayColors){
-    const index = Math.floor(Math.random() * arrayColors.length);
-    return arrayColors[index];
+function sayBye(){
+    alert('Bye!');
 }
