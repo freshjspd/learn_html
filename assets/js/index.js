@@ -1,6 +1,11 @@
 const boxes = document.querySelectorAll('.box');
 
-boxes.forEach(b => b.addEventListener('click', makeColor1));
+boxes.forEach(b => {
+    b.addEventListener('click', makeColor1);
+    b.children[0].addEventListener('click', () => {
+        b.remove();
+    });
+});
 
 function makeColor1(event){
     this.classList.remove('boxStyle2');
