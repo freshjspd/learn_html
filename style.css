@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 100px;
+    height: 70px;
     width: 500px;
     border-radius: 10px;
 }
@@ -25,4 +25,9 @@ body{
     padding: 10px;
     margin: 20px;
     background-color: gray;
+}
+
+.item.active{
+    transform: scale(2);
+    transition: transform 0.5s;
 }
