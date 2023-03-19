@@ -1,18 +1,17 @@
-const btn = document.getElementById('btn');
+const boxes = document.querySelectorAll('.box');
 
-btn.addEventListener('click', sayHello);
+boxes.forEach(b => b.addEventListener('click', makeColor1));
 
-function sayHello(event){
-    console.log(event);
-    alert('Hello, user !!');
-    btn.removeEventListener('click', sayHello);
-    btn.addEventListener('click', sayBye);
+function makeColor1(event){
+    //console.log(event.target);
+    //console.log(this);
+    this.style.backgroundColor = 'black';
+    this.removeEventListener('click', makeColor1);
+    this.addEventListener('click', makeColor2);
 }
 
-function sayBye(event){
-    console.log(event);
-    alert('Bye, user:)');
-    btn.removeEventListener('click', sayBye);
-    btn.addEventListener('click', sayHello);
+function makeColor2(event){
+    this.style.backgroundColor = 'white';
+    this.removeEventListener('click', makeColor2);
+    this.addEventListener('click', makeColor1);
 }
-
