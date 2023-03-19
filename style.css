@@ -7,6 +7,16 @@
     background-color: gray;
 }
 
+.boxStyle1{
+    background-color: white;
+    border: 5px solid black;
+}
+
+.boxStyle2{
+    background-color: black;
+    border: 5px solid cyan;
+}
+
 body{
     display: flex;
     flex-direction: column;
