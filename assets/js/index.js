@@ -1,13 +1,17 @@
 const [widthElem, heightElem] = document.querySelectorAll('h1');
+const inputEl = document.querySelector('input[type="text"]');
 
-window.addEventListener("resize", fun);
-window.addEventListener("load", fun);
+window.onload = logEvent;
+window.onresize = logEvent;
+window.onkeypress = logEvent;
+window.onclick = logEvent;
+window.ondblclick = logEvent;
 
-//window.onresize = fun;
+inputEl.oninput = logEvent;
+inputEl.onchange = logEvent;
+inputEl.onfocus = logEvent;
+inputEl.onblur = logEvent;
 
-function fun(event){
-
-    //window.innerWidth - внутреняя ширина браузера (не вьюпорт)
-    widthElem.innerText = `width=${window.outerWidth}px`;
-    heightElem.innerText = `height=${window.outerHeight}px`;
+function logEvent(event){
+    console.log(event);
 }
