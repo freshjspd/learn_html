@@ -5,20 +5,18 @@ const user = {
     age: 20,
     isMale: true,
     langs: ['ua', 'eng'],
-    emptyArray: [],
-    emptyObject: {},
-    car: {model: 'xModel', color: 'black'},
-    fieldUndefined: undefined,
-    fieldNull: null,
-    hello: function(){console.log('hello');}
+    car: {model: 'xModel', color: 'black'}
 };
 
-// 1  (client)
-userJSON = JSON.stringify(user);
-console.log(userJSON);
-// 2 (server)
-gettedUser = JSON.parse(userJSON);
-console.log(gettedUser);
+// добавляем в хранилище в виде строки
+const userJSON = JSON.stringify(user);
+localStorage.setItem('userJohn', userJSON);
+
+// забираем из хранилища для работы
+const gettedUserFromStrorage = localStorage.getItem('userJohn');
+const gettedUser = JSON.parse(gettedUserFromStrorage);
+console.log('user from strorage', gettedUser);
+
 
 /*
 const ranges = document.querySelectorAll('input[type="range"]');
