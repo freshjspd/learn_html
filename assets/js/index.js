@@ -1,17 +1,19 @@
-const [widthElem, heightElem] = document.querySelectorAll('h1');
-const inputEl = document.querySelector('input[type="text"]');
-
-window.onload = logEvent;
-window.onresize = logEvent;
-window.onkeypress = logEvent;
-window.onclick = logEvent;
-window.ondblclick = logEvent;
-
-inputEl.oninput = logEvent;
-inputEl.onchange = logEvent;
-inputEl.onfocus = logEvent;
-inputEl.onblur = logEvent;
-
-function logEvent(event){
-    console.log(event);
+const ranges = document.querySelectorAll('input[type="range"]');
+ranges.forEach(el => el.oninput = updBodyColor);
+function updBodyColor(event){
+    //const color = `rgb(${ranges[0].value},${ranges[1].value},${ranges[2].value})`;
+    let color = "rgb(";
+    ranges.forEach((el, index, list) =>
+        index == list.length -1 ? 
+            color += el.value + ')':
+            color += el.value + ','
+    );
+    document.body.style.backgroundColor = color;
 }
+
+/*
+rangeEl.oninput = setRangeValue;
+function setRangeValue(event){
+    valueEl.innerText = rangeEl.value;
+}
+*/
