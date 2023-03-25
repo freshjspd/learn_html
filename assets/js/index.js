@@ -1,16 +1,27 @@
-function* generator1(){
-    yield 1;
-    yield 2;
-    yield 3;
-    yield 4;
+class Stack{
+    constructor(maxSize = 10){
+        this.size = 0;
+        this.maxSize = maxSize;
+    }
+    push(value){
+        if(this.size == this.maxSize){
+            throw new Error('Стек переполнен!');
+        }
+        this[this.size] = value;
+        this.size++;
+    }
+    pop(){
+        if(this.size == 0){
+            throw new Error('Стек пуст!');
+            return;
+        }
+        const value = this[this.size];
+        delete this[this.size--];
+        return value;
+    }
 }
 
-const player1 = generator1();
-const player2 = generator1();
+const stack1 = new Stack(5);
 
-player1.next(); // 1
-player1.next(); // 2
-player2.next(); // 3
 
-player2.next(); // 1
 
