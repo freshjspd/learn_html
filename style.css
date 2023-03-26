@@ -1,37 +1,87 @@
 *{
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
-/*
-input[name="userEmail"]{
-
+body{
+    background-color: palevioletred;
 }
+
+:root{
+    --img-size: 200px;
+    --primary-color: #03daa0;
+    --second-color: silver;
+    --card-width: 400px;
+}
+
 
 form{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 300px;
-    justify-content:space-around;
-    border: 2px solid orange;
+    max-width: var(--card-width);
+    border: 1px solid black;
     padding: 20px;
+    background-color: var(--second-color);
+    margin-top: 120px;
 }
 
-input:focus{
-    border: 5px solid lawngreen;
-    outline:none;
+input{
+    margin-top: 20px;
 }
 
-input:checked{
-    color: orangered;
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: var(--primary-color);
 }
 
-input[type="radio"]:default{
-
+input:not(input[type="checkbox"]){
+    width: 100%;
+    height: 40px;
 }
 
-.check_container .radio_container{
+h2{
+    margin-top: 50px;
+}
+
+div.logo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    background-color: var(--second-color);
+    height: var(--img-size);
+    width: var(--img-size);
+    /*margin-top: calc(var(--img-size)/2+20px);*/
+    margin-top: -120px;
+    border-radius: 50%;
+}
+
+div.logo > img{
+    width: inherit;
+    height: inherit;
+}
+
+div.remember{
     display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 100%;
 }
 
-*/
+div.forwardToSing{
+    width: var(--card-width);
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+
+}
+
+input[type="checkbox"]{
+    margin: 0;
+}
+
+
+
