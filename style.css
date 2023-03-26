@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+input[name="userEmail"]{
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    justify-content:space-around;
+    border: 2px solid orange;
+    padding: 20px;
+}
+
+input:focus{
+    border: 5px solid lawngreen;
+    outline:none;
+}
+
+input:checked{
+    color: orangered;
+}
+
+input[type="radio"]:default{
+    
+}
+
+.check_container .radio_container{
+    display: flex;
+}
+
