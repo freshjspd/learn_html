@@ -83,5 +83,15 @@ input[type="checkbox"]{
     margin: 0;
 }
 
+input[type="text"]:valid, input[type="password"]:valid{
+    border: 5px solid var(--primary-color);
+} 
+
+
+input[type="text"]:invalid, input[type="password"]:invalid{
+    border: 5px solid red;
+} 
+
+
 
 
