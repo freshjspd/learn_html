@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*
 input[name="userEmail"]{
 
 }
@@ -26,10 +27,11 @@ input:checked{
 }
 
 input[type="radio"]:default{
-    
+
 }
 
 .check_container .radio_container{
     display: flex;
 }
 
+*/

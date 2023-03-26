@@ -11,40 +11,23 @@
 </head>
 <body>
   <form action="#">
-    <label for="userLogin">Login</label>
-    <input type="text" id="userLogin" name="userLogin" value="anon" placeholder="Введи логин" required>
-    <label for="userPassword">Password</label>
-    <input type="password" id="userPassword" name="userPassword" placeholder="Введи пароль" required>
-    <input type="email" name="userEmail" placeholder="Enter your email">
-    <div class="check_container">
-      <label>
-        <input type="checkbox" name="producer" value="apple">Apple
-      </label>
-      <label>
-        <input type="checkbox" name="producer" value="samsung">Samsung
-      </label>
-      <label>
-        <input type="checkbox" name="producer" value="huawei">Huawei
-      </label>
-      <label>
-        <input type="checkbox" name="producer" value="asus"><span>Asus</span>
-      </label>
+    <div class="logo">
+      <img src="#" alt="user photo">
     </div>
-    <div class="radio_container">
-      <span>Role:</span>
-      <label><input type="radio" name="role" value="stud" checked>Student</label>
-      <label><input type="radio" name="role" value="teacher">Teacher</label>
-      <label><input type="radio" name="role" value="admin">Admin</label>
+    <h2>Member login</h2>
+    <input type="text" id="login" name="login" placeholder="Введи логин" required>
+    <input type="password" id="password" name="password" placeholder="Введи пароль" required>
+    <div class="remember">
+      <label>
+        <input type="checkbox" name="rememberMe" value="rememberMe">Remember me
+      </label>
+      <a href="#">Forgot password?</a>
     </div>
-    <select name="langs">
-      <option value="ua">UA</option>
-      <option value="eng" selected>ENG</option>
-      <option value="spa">SPA</option>
-      <option value="fr">FR</option>
-    </select>
-    <input type="number" min="1" max="10" value="4"/>
-    <input type="range" min="1" max="100" value="10" step="5"/>
-    <input type="submit">
+    <input type="submit" value="Sign in">
   </form>
+  <div class="forwardToSing">
+    <p class="sign">Don't have an account?</p>
+    <a href="#">Sign up here!</a>
+  </div>
 </body>
 </html>
