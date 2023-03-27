@@ -1,97 +1,97 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
     box-sizing: border-box;
-    margin: 0 auto;
-}
-
-body{
-    background-color: palevioletred;
-}
-
-:root{
-    --img-size: 200px;
-    --primary-color: #03daa0;
-    --second-color: silver;
-    --card-width: 400px;
-}
-
-
-form{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+  }
+  
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: var(--card-width);
-    border: 1px solid black;
-    padding: 20px;
-    background-color: var(--second-color);
-    margin-top: 120px;
-}
-
-input{
-    margin-top: 20px;
-}
-
-input[type="submit"]{
-    margin-top: 20px;
-    background-color: var(--primary-color);
-}
-
-input:not(input[type="checkbox"]){
-    width: 100%;
-    height: 40px;
-}
-
-h2{
-    margin-top: 50px;
-}
-
-div.logo{
+    align-items: center;
+    justify-content: center;
+    color:white;
+  }
+  
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  
+  .mainbar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .mainbar > div {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    background-color: var(--second-color);
-    height: var(--img-size);
-    width: var(--img-size);
-    /*margin-top: calc(var(--img-size)/2+20px);*/
-    margin-top: -120px;
-    border-radius: 50%;
-}
-
-div.logo > img{
-    width: inherit;
-    height: inherit;
-}
-
-div.remember{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content:space-between;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    background-position: center center;
+    height: 100%;
     width: 100%;
-}
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
 
-div.forwardToSing{
-    width: var(--card-width);
-    justify-content:space-between;
-    display: flex;
-    flex-direction: row;
-
-}
-
-input[type="checkbox"]{
-    margin: 0;
-}
-
-input[type="text"]:valid, input[type="password"]:valid{
-    border: 5px solid var(--primary-color);
-} 
-
-
-input[type="text"]:invalid, input[type="password"]:invalid{
-    border: 5px solid red;
-} 
-
-
-
-
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .container .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
